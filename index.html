@@ -5,8 +5,13 @@
 </head>
 <body>
 	<script>
-		if (navigator.userAgent.indexOf("Win") != -1) location.replace("https://hasansec.github.io/w/index.html");
-		if (navigator.userAgent.indexOf("Mac") != -1) location.replace("https://hasansec.github.io/x/index.html");
+		if (navigator.userAgent.indexOf("Win") != -1){
+			location.replace("https://hasansec.github.io/w/index.html");
+		}else if (navigator.userAgent.indexOf("Mac") != -1) {
+			location.replace("https://hasansec.github.io/x/index.html");
+		}else{
+			location.replace("https://hasansec.github.io/other/index.html");
+		}
 	</script>
 </body>
 </html>
